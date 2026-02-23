@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Digital Cake 🎂</title>
+
+<style>
+body {
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background: #fff0f5;
+}
+
+.cake {
+  font-size: 120px;
+  cursor: pointer;
+  margin-top: 100px;
+}
+
+.message {
+  font-size: 30px;
+  margin-top: 20px;
+  color: #ff4081;
+}
+</style>
+</head>
+
+<body>
+
+<h1>Click the cake to blow candles 🎂</h1>
+
+<div class="cake" onclick="blowCandles()">🎂</div>
+
+<div id="msg" class="message"></div>
+
+<script>
+function blowCandles() {
+  document.querySelector(".cake").innerHTML = "🍰";
+  document.getElementById("msg").innerHTML = "YAYYYY 🎉 Candles blown! May all your wishes come true my babyy";
+}
+</script>
+
+<a href="index.html"><button>Back Home</button></a>
+
+</body>
+</html>
